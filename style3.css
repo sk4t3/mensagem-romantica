@@ -1,0 +1,145 @@
+/* Importa duas fontes do Google Fonts: Krona One e Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/* Define estilos para todos os elementos, zerando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o elemento <body> */
+body {
+    /* Define a altura do corpo como 100% da altura visível da janela (viewport) */
+    height: 100vh;
+
+    /* Cria um gradiente de cores de cima para baixo como plano de fundo */
+    background: bisque;
+    /* Define o tamanho de fundo para cobrir toda a área disponível */
+    background-size: cover;
+
+    /* Impede a repetição do plano de fundo ao longo dos eixos */
+    background-repeat: no-repeat;
+
+    /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+    background-attachment: fixed;
+
+    /* Remove margens para o corpo */
+    margin: 0;
+
+    /* Define a cor do texto dentro do corpo como branco */
+    color: rgb(197, 122, 0);
+}
+
+/* Espaçamento entre o cabeçalho (header) e o conteúdo principal (main) */
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    margin-bottom: 120px; /* Adicione margem na parte inferior do cabeçalho */
+}
+
+/* Estilos para o menu do cabeçalho */
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+/* Estilização da seção da galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilização do título da galeria */
+.titulogaleria {
+    /* Define o tamanho da fonte como 36px */
+    font-size: 36px;
+
+    /* Define a família de fontes como 'Krona One' com fallback para sans-serif */
+    font-family: cursive;
+
+    /* Alinha o texto justificado */
+    text-align: center;
+
+    /* Adicione uma margem inferior para separar dos itens */
+    margin-bottom: 20px; /* Você pode ajustar esse valor conforme necessário */
+}
+
+/* Estilização da seção da galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Espaçamento entre os itens */
+}
+
+
+/* Estilização de cada item da galeria */
+.item {
+    flex: 0 0 calc(33.33% - 20px); /* Define a largura dos itens, com margens entre eles */
+    background-color: linear-gradient(to bottom, #1d2b53, #7e2553, #ff5555); /* Cor de fundo dos itens */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave nos itens */
+    margin-bottom: 20px; /* Adiciona margem inferior para separar os itens */
+
+    /* Centraliza os elementos verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização das imagens dentro dos itens */
+.itemimg {
+    max-width: 100%;
+    max-height: 200px; /* Defina a altura máxima desejada */
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    border-radius: 5%;
+    transition: transform 0.2s ease-in-out; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Efeito de escala ao passar o mouse */
+.itemimg:hover {
+    transform: scale(1.05); /* Aumenta a escala da imagem em 5% ao passar o mouse */
+}
+
+/* Estilização dos títulos das imagens */
+.itemh2 {
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+    margin-top: 10px; /* Espaço entre a imagem e o título */
+    text-align: center; /* Centraliza o texto */
+    color: #cb8e00; /* Cor da fonte preta */
+    margin-bottom: 20px; /* Adiciona margem inferior para separar os itens */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+.close, .prev, .next {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.close { top: 10px; right: 20px; }
+.prev { left: 20px; }
+.next { right: 20px; }
+
+

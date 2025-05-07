@@ -1,0 +1,32 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        background-color: bisque;
+    }
+    h1 {
+        color: #d29a5f;
+    }
+    button {
+        padding: 10px 30px;
+        font-size: 25px;
+        font-family: cursive;
+        cursor: pointer;
+        background-color: #9c5100;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #bc7f3e;
+    }
+
+    .botao3:hover::before {
+        left: 100%;
+    }

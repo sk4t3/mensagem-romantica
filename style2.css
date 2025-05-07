@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: cursive;
+    margin: 50px;
+    background-color: bisque;
+}
+h2, h3 {
+    color: #b47413;
+}
+.countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.line {
+    margin: 20px auto;
+    width: 50%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+button {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: cursive;
+    cursor: pointer;
+    background-color: #9c5100;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #bc7f3e;
+}
+
+.botao3:hover::before {
+    left: 100%;
+}
